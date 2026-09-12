@@ -53,6 +53,11 @@ function App() {
   return (
     <main className="contenedor">
       <h1>Lista de contactos</h1>
+      <img
+        src="/images/contactos.png"
+        alt="Imagen de contactos"
+        className="imagen-principal"
+      />
 
       <FormularioContacto
         agregarContacto={agregarContacto}
