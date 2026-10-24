@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "924696241899",
+    "project_id": "challenge-7-2f799",
+    "storage_bucket": "challenge-7-2f799.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924696241899:android:304239a497cb248fe300ae",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARRGRhOCF6kQ14PGiJNw0x_3VQg-VfBqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
