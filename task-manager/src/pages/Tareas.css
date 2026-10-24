@@ -1,0 +1,13 @@
+.tarea-completada {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.mensaje-vacio {
+  text-align: center;
+  margin: 30px 0;
+}
+
+ion-button {
+  margin-top: 10px;
+}

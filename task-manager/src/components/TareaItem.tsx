@@ -4,12 +4,20 @@ import {
   IonLabel,
 } from "@ionic/react";
 
-import type { Tarea } from "../types/Tarea";
+import type {
+  Tarea,
+} from "../types/Tarea";
 
 type PropiedadesTarea = {
   tarea: Tarea;
-  completarTarea: (id: number) => void;
-  eliminarTarea: (id: number) => void;
+
+  completarTarea: (
+    id: number
+  ) => void;
+
+  eliminarTarea: (
+    id: number
+  ) => void;
 };
 
 function TareaItem({
@@ -38,11 +46,30 @@ function TareaItem({
       </IonLabel>
 
       <IonButton
-        slot="end"
+        fill="clear"
+        routerLink={
+          `/tasks/${tarea.id}`
+        }
+      >
+        Detalle
+      </IonButton>
+
+      <IonButton
+        fill="clear"
+        routerLink={
+          `/tasks/edit/${tarea.id}`
+        }
+      >
+        Editar
+      </IonButton>
+
+      <IonButton
         fill="outline"
         color="success"
         onClick={() =>
-          completarTarea(tarea.id)
+          completarTarea(
+            tarea.id
+          )
         }
       >
         {tarea.completada
@@ -51,10 +78,11 @@ function TareaItem({
       </IonButton>
 
       <IonButton
-        slot="end"
         color="danger"
         onClick={() =>
-          eliminarTarea(tarea.id)
+          eliminarTarea(
+            tarea.id
+          )
         }
       >
         Eliminar
